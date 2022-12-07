@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+
+        <div id="weathericon">
+            <i class="fas fa-sun" style="color: #feca57;"></i>
+        </div>
+
+        <div class="info">
+            <h2 class="location"><i class="fas fa-street-view" style="color: #feca57;"></i>
+                {%city%},{%country%}
+            </h2>
+            <p id="date"> WED | OCT 26 | 10:49PM </p>
+            <h1 class="temp"> {%tempval%}&deg;C</h1>
+            <h3 class="tempmin_max "> {%tempmin%}&deg;C | {%tempmax%}&deg;C</h3>
+        </div>
+    </div>
+</body>
+</html>
