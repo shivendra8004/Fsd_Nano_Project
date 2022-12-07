@@ -160,6 +160,31 @@
             font-size: 6rem;
             animation: fas-anime 3sec linear infinite alternate;
         }
+        
+        @keyframes fas-anime {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+        
+        @media(max-width: 600px) {
+            .box {
+                width: 90vw;
+                height: 80vh;
+            }
+            .wave {
+                top: 85%;
+            }
+            #weathericon {
+                font-size: 5em;
+            }
+            .info {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 
