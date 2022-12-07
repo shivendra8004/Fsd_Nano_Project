@@ -32,3 +32,6 @@ const replaceVal = (temval, orgval) => {
         });
     }
   });
+  server.listen(3000,()=>{
+    console.log("Server connected on port no. 3000");
+  });
