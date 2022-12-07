@@ -115,6 +115,51 @@
         .fa-street-view {
             animation: rotates 3s liner infinite alternate;
         }
+        
+        @keyframes rotates {
+            from {
+                transform: translateX(-0.5rem);
+            }
+            to {
+                transform: translateX(0.5rem);
+            }
+        }
+        
+        #date {
+            text-align: center;
+            margin-top: 0.5rem;
+            color: #57606f;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        
+        .temp {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        .tempmin_max {
+            text-align: center;
+            margin-top: 0.3rem;
+            font-weight: 300rem;
+            font-size: 1.2rem;
+            color: #57606f;
+        }
+        
+        #weathericon {
+            height: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+        }
+        
+        #wearhericon .fas {
+            font-size: 6rem;
+            animation: fas-anime 3sec linear infinite alternate;
+        }
     </style>
 </head>
 
