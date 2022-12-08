@@ -223,5 +223,20 @@
         </div>
     </div>
 </body>
+<script>
+    const curDate = document.getElementById("date")
+        let weathericon = document.getElementById("weathericon")
+
+        const tempStatus = "{%tempstatus%}"
+        if (tempStatus == "Sunny") {
+            weathericon.innerHTML = '<i class="fas fa-sun" style="color: #feca57;"></i>'
+        } else if (tempStatus == "Clouds") {
+            weathericon.innerHTML = '<i class="fas fa-cloud" style="color: #dfe4ea;"></i>'
+        } else if (tempStatus == "Rainy") {
+            weathericon.innerHTML = '<i class="fas fa-rain" style="color: #a4b0be;"></i>'
+        } else {
+            weathericon.innerHTML = '<i class="fas fa-cloud" style="color: #feca57;"></i>'
+        }
+</script>
 
 </html>
