@@ -283,6 +283,19 @@
 
             let hours = now.getHours();
             let mins = now.getMinutes();
+            let periods = "AM";
+
+            if (hours > 11) {
+                periods = "PM";
+                if (hours > 12) hours -= 12;
+            }
+            if (mins < 10) {
+                mins = "0" + mins
+            }
+
+            return ` ${month} ${date} | ${hours}:${mins}${periods}`;
+        };
+        curDate.innerHTML = getcurrentDay() + " | " + getcurrentTime();
 </script>
 
 </html>
