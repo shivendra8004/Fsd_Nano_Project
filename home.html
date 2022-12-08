@@ -261,7 +261,28 @@
         let day = (weekday[currentTime.getDay()]);
         return day;
     };
-// getcurrentDay();
+    const getcurrentTime = () => {
+            var months = [
+                "Jan",
+                "Feb",
+                "March",
+                "Apr",
+                "May",
+                "June",
+                "July",
+                "Aug",
+                "Sept",
+                "Oct",
+                "Nov",
+                "Dec",
+            ];
+            var now = new Date();
+
+            var month = months[now.getMonth()]; // if using windows Os then +1 month (like var month = months[now.getMonth() +1]; )
+            var date = now.getDate();
+
+            let hours = now.getHours();
+            let mins = now.getMinutes();
 </script>
 
 </html>
